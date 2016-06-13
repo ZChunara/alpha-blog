@@ -45,7 +45,6 @@ before_action :set_article
     @article = Article.find(params)
     end
 
-
     def article_params
       params.require(:article).permit(:title, :description)
   end
